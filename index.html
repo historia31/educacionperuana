@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de la Educación Peruana — Siglo XX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="banner" id="banner">
+    <div class="banner-inner">
+      <div class="banner-logo banner-logo--left">
+        <img src="imagenes/logount_final.png" alt="UNT">
+      </div>
+      <button class="banner-title-btn" id="bannerTitleBtn" data-section="portada" type="button">
+        <span id="bannerTitleText">Universidad Nacional de Trujillo</span>
+        <span class="banner-title-sub" id="bannerTitleSub">Educación Secundaria Historia y Geografía</span>
+      </button>
+      <div class="banner-right">
+        <div class="banner-logo banner-logo--right">
+          <img src="imagenes/logo2.png" alt="Historia y Geografía UNT">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="pres-nav" id="presNav" aria-label="Presidentes">
+    <div class="pres-nav-inner">
+      <button class="pres-item" data-section=" s " type="button" title="titulo del boton"> <!-- title=titulo que sale al poner el cursor encima--> 
+        <img class="pres-img" src=" " alt=" "><!-- src=ruta de imagen alt=nombre de la foto--> 
+        <span class="pres-label"><strong></strong>  </span> <!-- nombre de presidente que se vera al hacer click --> 
+      </button>
+      <button class="pres-item" data-section=" s " type="button" title="titulo del boton">
+        <img class="pres-img" src=" " alt=" ">
+        <span class="pres-label"><strong></strong>  </span>
+      </button>
+      <button class="pres-item" data-section=" s " type="button" title="titulo del boton">
+        <img class="pres-img" src=" " alt=" ">
+        <span class="pres-label"><strong></strong>  </span>
+      </button>
+      <button class="pres-item" data-section="prado" type="button" title="Manuel Prado y Ugarteche">
+        <img class="pres-img" src="imagenes/icon-prado.png" alt="Prado">
+        <span class="pres-label"><strong>MANUEL PRADO Y UGARTECHE</strong></span>
+      </button>
+      <button class="pres-item" data-section="bustamante" type="button" title="José Luis Bustamante y Rivero">
+        <img class="pres-img" src="imagenes/icon-bustamante.png" alt="Bustamante">
+        <span class="pres-label"><strong>JOSE LUIS BUSTAMANTE Y RIVERO</strong></span>
+      </button>
+      <button class="pres-item" data-section="odria" type="button" title="Manuel Arturo Odría Amoretti">
+        <img class="pres-img" src="imagenes/icon-odria.jpg" alt="Odría">
+        <span class="pres-label"><strong>MANUEL ARTURO ODRÍA AMORETTI</strong></span>
+      </button>
+      <button class="pres-item" data-section="prado2" type="button" title="Manuel Prado y Ugarteche — Segundo Gobierno">
+        <img class="pres-img" src="imagenes/icon-prado.png" alt="Prado II">
+        <span class="pres-label"><strong>MANUEL PRADO Y UGARTECHE</strong></span>
+      </button>
+          <button class="pres-item" data-section=" s " type="button" title="titulo del boton">
+        <img class="pres-img" src=" " alt=" ">
+        <span class="pres-label"><strong></strong>  </span>
+      </button>
+        <button class="pres-item" data-section=" s " type="button" title="titulo del boton">
+        <img class="pres-img" src=" " alt=" ">
+        <span class="pres-label"><strong></strong>  </span>
+      </button>
+        <button class="pres-item" data-section=" s " type="button" title="titulo del boton">
+        <img class="pres-img" src=" " alt=" ">
+        <span class="pres-label"><strong></strong>  </span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="content" id="mainContent">
+
+    <section class="page page-portada active" id="portada">
+      <div class="portada-hero">
+        <div class="portada-bg"></div>
+        <div class="portada-overlay"></div>
+        <div class="portada-inner">
+          <div class="portada-header">
+            <span class="portada-badge">República del Perú · Siglo XX</span>
+            <h1 class="portada-titulo">Historia de la<br>Educación Peruana</h1>
+            <p class="portada-lema"><em>"Educar es formar ciudadanos para la Patria"</em></p>
+          </div>
+          <div class="portada-media-row">
+            <div class="portada-video-col">
+              <div class="video-placeholder">
+                <div class="video-icon-wrap">
+                  <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                    <polygon points="32,24 60,40 32,56" fill="currentColor"/>
+                  </svg>
+                </div>
+                <p class="video-label"><strong>Documental:</strong><br>Historia de la Educación Peruana</p>
+                <span class="video-dur">≈ 3 minutos</span>
+                <span class="video-soon">Próximamente</span>
+              </div>
+            </div>
+            <div class="portada-desc-col">
+              <h3 class="pdesc-titulo">Sobre este recorrido</h3>
+              <p class="pdesc-texto">
+                Esta plataforma nació del trabajo colaborativo de estudiantes de la
+                <strong>Universidad Nacional de Trujillo</strong>, con el propósito de acercar a la comunidad
+                académica y al público general a los grandes hitos educativos del Perú del siglo XX.
+              </p>
+              <p class="pdesc-texto">
+                Desde la República Aristocrática hasta la Reforma Educativa de 1972, cada gobierno imprimió 
+                su sello en las aulas, en los maestros y en los millones de peruanos que vieron en la escuela 
+                una puerta al progreso y a la identidad nacional.
+              </p>
+              <p class="pdesc-cita">
+                <em>"La educación no es solo instrucción; es la fragua donde se forja el alma de un pueblo."</em>
+              </p>
+              <cite class="cita-autor"><i>- José Martí, 1878 (Folleto de Guatemala)</i></cite>
+            </div>
+          </div>
+          <div class="portada-cta-wrap">
+            <button class="cta-btn" data-section="prado" type="button">
+              <span>Comenzar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="cta-icon">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="zona-equipo" id="zonaEquipo">
+        <div class="equipo-wrap">
+          <div class="sec-header">
+            <span class="sec-tag">Quiénes somos</span>
+            <h2 class="sec-titulo">Nuestro Equipo</h2>
+            <p class="sec-intro">
+              Somos estudiantes de Historia y Geografía de la Universidad Nacional de Trujillo,
+              unidos por el compromiso de difundir el patrimonio educativo del Perú del siglo XX.
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="Edinsson">
+                <div class="team-overlay"><p>Aquí va la descripción de cada integrante.</p></div>
+              </div>
+              <h4 class="team-name">Edinsson</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="Carlos">
+                <div class="team-overlay"><p></p></div>
+              </div>
+              <h4 class="team-name">Carlos</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="María">
+                <div class="team-overlay"><p></p></div>
+              </div>
+              <h4 class="team-name">María</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="José">
+                <div class="team-overlay"><p></p></div>
+              </div>
+              <h4 class="team-name">José</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="Lucía">
+                <div class="team-overlay"><p></p></div>
+              </div>
+              <h4 class="team-name">Lucía</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+            <div class="team-card">
+              <div class="team-photo-wrap">
+                <img class="team-photo" src="imagenes/odria.jpg" alt="Diego">
+                <div class="team-overlay"><p></p></div>
+              </div>
+              <h4 class="team-name">Diego</h4>
+              <span class="team-role">Alumno</span>
+            </div>
+          </div>
+
+          <div class="vm-section">
+            <div class="vm-ornament"><span>✦</span></div>
+            <div class="vm-grid">
+              <div class="vm-card">
+                <div class="vm-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M2 24C8 12 16 6 24 6s16 6 22 18C40 36 32 42 24 42S8 36 2 24z" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 class="vm-titulo">Visión</h3>
+                <p class="vm-texto">
+                  Ser la plataforma de referencia en historia educativa peruana para estudiantes,
+                  docentes e investigadores de la región, consolidando un espacio digital donde el
+                  conocimiento histórico del siglo XX dialogue con el presente y proyecte el futuro
+                  de la educación nacional.
+                </p>
+              </div>
+              <div class="vm-card">
+                <div class="vm-icon">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 6L29 18h13l-10.5 8L35 38 24 30.5 13 38l3.5-12L6 18h13z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="vm-titulo">Misión</h3>
+                <p class="vm-texto">
+                  Difundir, de manera accesible e interactiva, los aportes de los presidentes peruanos
+                  del siglo XX a la educación nacional, promoviendo el pensamiento crítico y la identidad
+                  cultural a través de recursos digitales rigurosos, diseñados desde la Universidad Nacional
+                  de Trujillo para toda la comunidad académica.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="prado">
+      <article class="sheet">
+        <header class="sheet-header">
+          <span class="sheet-number"></span>
+          <h2>Manuel Prado y Ugarteche (Primer gobierno)</h2>
+          <p class="sheet-biography">Manuel Prado y Ugarteche asumió su primer gobierno constitucional en diciembre 
+            de 1939 tras ganar unas elecciones respaldadas por el régimen saliente de Benavides. Este periodo inauguró 
+            la llamada "Primavera Democrática", una etapa de relativa tolerancia política en el país que coincidió con 
+            el estallido de grandes tensiones bélicas e internacionales.</p>
+        </header>
+        <div class="sheet-body">
+          <div class="sheet-text">
+            <h3>Ley Orgánica de Educación Pública</h3>
+            <p>Estableció en 1941 la gratuidad y obligatoriedad de la educación primaria, aumentando significativamente
+              el presupuesto destinado al sector.</p>
+            <h3>Aumento del presupuesto educativo</h3>
+            <p>El presupuesto en educación creció de 13 millones en 1939 a 58 millones en 1945, permitiendo mayor 
+              número de escuelas y docentes.</p>
+            <h3>Institucionalización del Día del Maestro</h3>
+            <p>Dio visibilidad pública a la profesión del docente y ayudó a consolidar su prestigio social.</p>
+            <h3>Impulso a la educación técnica</h3>
+            <p>Promovió la creación de escuelas técnicas y de artes y oficios para responder a las necesidades 
+              industriales y productivas del país.</p>
+            <h3>Creación de colegios emblemáticos</h3>
+            <p>Fundó el Colegio Militar Leoncio Prado, combinando la formación académica con la disciplina castrense.</p>
+            <h3>Apoyo social escolar</h3>
+            <p>Implementó políticas de ayuda estatal directa a los estudiantes y creó los primeros comedores en las 
+              escuelas públicas para asegurar condiciones básicas de nutrición.</p>
+          </div>
+        </div>
+      </article>
+      <div class="historia-fondo-derecha">
+        <img src="imagenes/prado.jpg" alt="Manuel Prado">
+      </div>
+    </section>
+
+    <section class="page" id="bustamante">
+      <article class="sheet">
+        <header class="sheet-header">
+          <span class="sheet-number"></span>
+          <h2>José Luis Bustamante y Rivero</h2>
+          <p class="sheet-biography">(Arequipa, 1894 – Lima, 1989) fue uno de los juristas y políticos más respetados 
+            del Perú en el siglo XX. Abogado de profesión y ferviente defensor de la legalidad, gobernó el país como 
+            presidente constitucional entre 1945 y 1948. Su gestión es recordada históricamente por establecer la 
+            soberanía de las 200 millas del mar peruano y por su intachable trayectoria ética, que lo llevó años 
+            después a presidir la Corte Internacional de Justicia de La Haya.</p>
+        </header>
+        <div class="sheet-body">
+          <div class="sheet-text">
+            <h3>Inventario de la Realidad Educativa del Perú</h3>
+            <p>Permitió recolectar datos sobre alumnos, profesores, planes de estudio, materiales y financiamiento, 
+              creando una base técnica para la planificación educativa posterior.</p>
+            <h3>Gratuidad de la educación secundaria (Ley N° 10263)</h3>
+            <p>Promulgada el 27 de octubre de 1945, marcó un hito histórico al disponer que el Estado 
+              proporcionaría educación secundaria gratuita a todos los alumnos que aprobaran la primaria en escuelas públicas.</p>
+            <h3>Campaña de Alfabetización de Adultos</h3>
+            <p>El Ministerio de Educación, con el Fondo de Salud y Bienestar Social, impulsó la alfabetización en zonas 
+              marginadas de Lima, ampliando la noción de educación pública hacia la educación de adultos.</p>
+            <h3>Creación de los Núcleos Escolares Rurales</h3>
+            <p>Sistema enfocado en las poblaciones campesinas e indígenas de los Andes, que integraba la enseñanza escolar 
+              con formación en agricultura, sanidad y desarrollo comunitario rural.</p>
+            <h3>Plan Educacional del Perú</h3>
+            <p>Introdujo metodologías modernas como el Estudio Dirigido, buscando que el alumno tomara 
+              un rol más activo y analítico en lugar de ser un memorizador pasivo.</p>
+            <h3>Estatuto Universitario de 1946</h3>
+            <p>Devolvió la autonomía a las universidades públicas e implementó el sistema de cogobierno, 
+              permitiendo que profesores y estudiantes participaran democráticamente en las decisiones académicas.</p>
+            <h3>Impulso a la educación técnico-industrial</h3>
+            <p>Fortaleció el equipamiento de escuelas técnicas, conectando los programas de estudio secundarios con 
+              talleres prácticos para preparar a la juventud para el mercado laboral.</p>
+          </div>
+        </div>
+      </article>
+      <div class="historia-fondo-derecha">
+        <img src="imagenes/joseluisbustamente.jpeg" alt="José Luis Bustamante y Rivero">
+      </div>
+    </section>
+
+    <section class="page" id="odria">
+      <article class="sheet">
+        <header class="sheet-header">
+          <span class="sheet-number"></span>
+          <h2>Manuel Arturo Odría Amoretti</h2>
+          <p class="sheet-biography">(Tarma, 1896 – Lima, 1974) fue un destacado militar y político peruano que gobernó 
+            el país entre 1948 y 1956, un periodo conocido en la historia nacional como el Ochenio. Su administración se 
+            caracterizó por un fuerte autoritarismo político combinado con una enorme inversión en obras públicas, educación 
+            y salud, impulsada por un momento de gran bonanza económica internacional.</p>
+        </header>
+        <div class="sheet-body">
+          <div class="sheet-text">
+            <h3>Creación de las Grandes Unidades Escolares (GUE)</h3>
+            <p>Construyó gigantescos complejos educativos modernos en Lima y capitales de provincia (como el Melitón Carvajal, 
+              Alfonso Ugarte y Miguel Grau), unificando primaria, secundaria y técnica con talleres, laboratorios, 
+              estadios y piscinas.</p>
+            <h3>Plan Nacional de Educación</h3>
+            <p>Diseñado por el ministro Juan Mendoza Rodríguez, fue el primer plan estratégico a largo plazo que organizó 
+              el sistema educativo en niveles definidos y vinculó la enseñanza con el desarrollo económico del país.</p>
+            <h3>Fuerte aumento del presupuesto</h3>
+            <p>Destinó un porcentaje histórico del presupuesto nacional a la educación, llegando a superar el 5% del 
+              gasto estatal, financiando la masificación escolar y la compra de materiales pedagógicos.</p>
+            <h3>Educación técnica y formación docente</h3>
+            <p>Potenció los colegios industriales, agrícolas y comerciales dentro de las GUE. Construyó el moderno local 
+              de la Escuela Normal Superior de Varones en La Cantuta y creó el Fondo de Educación Nacional para mejorar 
+              los sueldos de los profesores.</p>
+            <h3>Educación para mujeres</h3>
+            <p>Expandió el acceso a la educación secundaria femenina construyendo colegios emblemáticos exclusivos para 
+              mujeres, como la GUE Teresa González de Fanning.</p>
+            <h3>Palmas Magisteriales</h3>
+            <p>Institucionalizaron el reconocimiento oficial a la labor docente y se convirtieron en un símbolo 
+              de distinción profesional del magisterio peruano.</p>
+          </div>
+        </div>
+      </article>
+      <div class="historia-fondo-derecha">
+        <img src="imagenes/odria.jpg" alt="Manuel Arturo Odría Amoretti">
+      </div>
+    </section>
+
+    <section class="page" id="prado2">
+      <article class="sheet">
+        <header class="sheet-header">
+          <span class="sheet-number"></span>
+          <h2>Manuel Prado y Ugarteche (Segundo gobierno)</h2>
+          <p class="sheet-biography">En 1956, Manuel Prado y Ugarteche logró un histórico retorno a la presidencia del 
+            Perú al ganar unas reñidas elecciones generales. Esta segunda gestión, conocida históricamente como la "Convivencia", 
+            marcó el fin de la dictadura de Odría y abrió paso a una época de intensos pactos políticos orientados a mantener 
+            la estabilidad civil del país.</p>
+        </header>
+        <div class="sheet-body">
+          <div class="sheet-text">
+            <h3>Inventario de la realidad educativa</h3>
+            <p>Con Jorge Basadre como Ministro de Educación impulsó el primer censo y diagnóstico exhaustivo para recolectar 
+              datos sobre alumnos, maestros, infraestructura y financiamiento a nivel nacional.</p>
+            <h3>Nacimiento de la televisión pública y educativa</h3>
+            <p>En coordinación con la UNESCO, se fundó la primera estación de televisión pública del país, el canal del Estado 
+              (OAD TV Canal 7, hoy TV Perú), con el objetivo de difundir contenidos culturales y educativos.</p>
+            <h3>Estatuto Universitario de 1960 (Ley N° 13417)</h3>
+            <p>Devolvió y consolidó la autonomía económica y académica de las universidades públicas del Perú, fortaleciendo 
+              el cogobierno estudiantil.</p>
+            <h3>Creación del SENATI</h3>
+            <p>El 19 de diciembre de 1961, mediante la Ley N° 13771, se creó el Servicio Nacional de Aprendizaje y Trabajo 
+              Industrial (SENATI), pilar fundamental para la formación técnica profesional de los jóvenes peruanos.</p>
+            <h3>Plan del Texto Escolar</h3>
+            <p>Se formalizó la producción masiva de libros escolares por parte del Estado, promoviendo la investigación
+               de la historia peruana y asegurando material de estudio gratuito para miles de colegios.</p>
+            <h3>Profesionalización de la carrera docente</h3>
+            <p>Se reestructuraron los sueldos y la capacitación de los profesores, con fuerte impulso a la Escuela Normal Superior 
+              (hoy Universidad Nacional de Educación Enrique Guzmán y Valle - La Cantuta).</p>
+          </div>
+        </div>
+      </article>
+      <div class="historia-fondo-derecha">
+        <img src="imagenes/prado.jpg" alt="Manuel Prado y Ugarteche">
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
