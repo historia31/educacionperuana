@@ -155,7 +155,7 @@ body.in-history .pres-nav { display: block; }
 .pres-nav-inner::-webkit-scrollbar-track { background: transparent; }
 .pres-nav-inner::-webkit-scrollbar-thumb { background: rgba(201,164,51,0.3); border-radius: 4px; }
 
-/* Botones de presidente — circular, se expande al hover */
+/* Botones de presidente */
 nav.pres-nav .pres-item {
   display: inline-flex;
   flex-direction: row;
@@ -249,6 +249,8 @@ nav.pres-nav .pres-label strong {
   white-space: nowrap;
   line-height: 1.2;
   text-align: center;
+  padding-left: 10px;
+  transform-origin: 0;
 }
 
 nav.pres-nav .pres-label small {
@@ -259,16 +261,15 @@ nav.pres-nav .pres-label small {
   margin-top: 1px;
 }
 
-nav.pres-nav .pres-item:hover .pres-label strong,
-nav.pres-nav .pres-item.active .pres-label strong {
-  animation: marqueeNav 4s linear infinite;
+nav.pres-nav .pres-item:hover .pres-label strong.animar-texto,
+nav.pres-nav .pres-item.active .pres-label strong.animar-texto {
+  animation: marqueeNav 5s linear infinite;
 }
 
 @keyframes marqueeNav {
-  0%   { transform: translateX(0%); }
-  15%  { transform: translateX(0%); }
-  85%  { transform: translateX(-45%); }
-  100% { transform: translateX(0%); }
+    0% {transform: translateX(0%); }
+    15% {transform: translateX(0%); }
+    100% { transform: translateX(-45%); }
 }
 
 /* ════════════════════════════════════════════════
@@ -653,7 +654,7 @@ body.in-history .content {
   gap: 0.85rem;
 }
 
-.vm-icon { width: 40px; height: 40px; color: var(--rojo); margin: 0 auto;}
+.vm-icon { width: 40px; height: 40px; color: var(--blanco); margin: 0 auto;}
 .vm-icon svg { width: 100%; height: 100%; }
 
 .vm-titulo {
@@ -675,13 +676,12 @@ body.in-history .content {
 ════════════════════════════════════════════════ */
 .sheet {
   position: relative;
-  max-width: 56vw;          /* ocupa solo la mitad izquierda */
+  max-width: 56vw;
   margin: 0 0 0 0;
   padding: 2rem 2rem 2.5rem 2.5rem;
   z-index: 2;
 }
 
-/* Secciones temáticas (sin foto) ocupan todo el ancho */
 .sheet--tema {
   max-width: 860px;
   margin: 0 auto;
@@ -694,7 +694,6 @@ body.in-history .content {
   margin-bottom: 1.5rem;
 }
 
-/* Badge para secciones temáticas */
 .sheet-tema-badge {
   display: inline-block;
   font-family: var(--font-body);
@@ -716,7 +715,7 @@ body.in-history .content {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: var(--rojo);
+  color: var(--white);
   margin-bottom: 0.3rem;
 }
 
@@ -743,18 +742,15 @@ body.in-history .content {
   margin-top: 0.5rem;
 }
 
-/* Área de contenido — una sola columna para presidentes */
 .sheet-body {
   display: block;
   margin-bottom: 2rem;
 }
 
-/* Para secciones temáticas sin foto a la derecha */
 .sheet-body--full {
   max-width: 100%;
 }
 
-/* 2 columnas en secciones temáticas (Cangallo e Indigenismo) */
 .sheet--tema .sheet-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -762,7 +758,6 @@ body.in-history .content {
   align-items: start;
 }
 
-/* La tarjeta de introducción ocupa el ancho completo */
 .sheet--tema .sheet-text .topic-card--intro {
   grid-column: 1 / -1;
 }
@@ -786,7 +781,6 @@ body.in-history .content {
   border-left-color: var(--dorado);
 }
 
-/* Tarjeta de intro (sin h3) */
 .topic-card--intro {
   border-left-color: var(--dorado);
   background: rgba(201,164,51,0.06);
@@ -808,7 +802,6 @@ body.in-history .content {
   margin: 0;
 }
 
-/* Mantener compatibilidad con los h3/p directos en sheet-text */
 .sheet-text h3 {
   font-family: var(--font-display);
   font-size: 1.15rem;
@@ -893,4 +886,30 @@ body.in-history .content {
   .portada-inner   { padding: 2rem 1rem 2.5rem; }
   .pres-nav-inner  { gap: 6px; padding: 0 0.5rem; }
   .topic-card      { padding: 0.75rem 0.9rem; }
+}
+
+/* =════════════════════════════════════════════════
+   UNIFICACIÓN DE SECCIONES ESPECIALES (MANTENIENDO 2 COLUMNAS)
+   ════════════════════════════════════════════════ */
+#cangallo .sheet--tema, 
+#indigenismo .sheet--tema {
+    max-width: 56vw !important;
+    margin: 0 0 0 0 !important;
+}
+
+#cangallo .sheet--tema .sheet-text,
+#indigenismo .sheet--tema .sheet-text {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+}
+
+#cangallo .sheet-text .card-ancha,
+#indigenismo .sheet-text .card-ancha {
+    grid-column: 1 / -1 !important;
+}
+
+#cangallo .historia-fondo-derecha,
+#indigenismo .historia-fondo-derecha {
+    display: block !important;
 }
